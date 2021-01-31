@@ -1,9 +1,12 @@
-import java.util. ArrayList;
-
 /**
- * sous classe de Produits qui contient les informations relatives aux livres, tel que l'éditeur et le nombre de pages
- * dans le livre
+ * Nom de la classe : Livre
+ * Description      : sous classe de Produits qui contient les informations relatives aux livres, tel que l'éditeur
+ *                    et le nombre de pages dans le livre
+ * @version         : 1.0
+ * Date             : 30/01/2021
+ * @Copyright       : Olivier Vigneault
  */
+
 public class Livre extends Produits {
     private String editeur;
     private int nombrePages;

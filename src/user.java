@@ -1,8 +1,13 @@
+/**
+ * Nom de la classe : user
+ * Description      : utilisateur qui peut acheter, vendre et échanger des produits avec son compte en banque
+ * @version         : 1.0
+ * Date             : 30/01/2021
+ * @Copyright       : Olivier Vigneault
+ */
+
 import java.util. ArrayList;
 
-/**
- * utilisateur qui peut acheter, vendre et échanger des produits avec son compte en banque
- */
 public class user {
     private ArrayList<Produits> produits;
     private BankAccount compte;

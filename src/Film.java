@@ -1,6 +1,11 @@
 /**
- * sous classe de produit qui permet de contenir les informations importantes d'un film tel que sa durée
+ * Nom de la classe : Film
+ * Description      : sous classe de produit qui permet de contenir les informations importantes d'un film tel que sa durée
+ * @version         : 1.0
+ * Date             : 30/01/2021
+ * @Copyright       : Olivier Vigneault
  */
+
 public class Film extends Produits {
     private int duree;
 

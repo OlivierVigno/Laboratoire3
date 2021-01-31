@@ -1,9 +1,15 @@
 /**
- * sous classe de Livre qui contient les informations importantes d'une bande dessinée (en couleur ou en noir et blanc)
+ * Nom de la classe : BandeDessinee
+ * Description      : sous classe de Livre qui contient les informations importantes d'une bande dessinée
+ *                    (en couleur ou en noir et blanc)
+ * @version         : 1.0
+ * Date             : 30/01/2021
+ * @Copyright       : Olivier Vigneault
  */
+
 public class BandeDessinee extends Livre
 {
-    private boolean couleur;
+    private String couleur;
 
     /**
      * copieur de BandeDessinee, crée une instance de BandeDessinee identique à la Bande dessinee envoyée en paramètre
@@ -24,7 +30,7 @@ public class BandeDessinee extends Livre
      * @param nombrePagesLivre nombre de pages dans le livre
      * @param couleurLivre livre en couleur ou non
      */
-    BandeDessinee(String titreLivre, String auteurLivre, String editeurLivre, double prixLivre, int nombrePagesLivre, boolean couleurLivre) {
+    BandeDessinee(String titreLivre, String auteurLivre, String editeurLivre, double prixLivre, int nombrePagesLivre, String couleurLivre) {
         super(titreLivre, auteurLivre, editeurLivre, prixLivre, nombrePagesLivre);
         setCouleur(couleurLivre);
     }
@@ -33,7 +39,7 @@ public class BandeDessinee extends Livre
      * retourne la valeur de couleur, à savoir si c'est une Bande dessinée en couleur ou en noir et blanc
      * @return la valeur du boolean couleur
      */
-    public boolean isCouleur() {
+    public String isCouleur() {
         return couleur;
     }
 
@@ -41,7 +47,7 @@ public class BandeDessinee extends Livre
      * modifie la valeur du boolean couleur avec la valeur envoyée en paramètre
      * @param couleur nouvel valeur du boolean couleur
      */
-    public void setCouleur(boolean couleur) {
+    public void setCouleur(String couleur) {
         this.couleur = couleur;
     }
 
@@ -50,9 +56,6 @@ public class BandeDessinee extends Livre
      */
     public void printBDinfo()
     {
-        if (couleur)
-            System.out.println("En couleur : oui");
-        else
-            System.out.println("En couleur : non");
+            System.out.println("impression : " + isCouleur());
     }
 }

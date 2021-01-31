@@ -1,11 +1,15 @@
 /**
- * classe de test, qui crée des utilisateurs, des produits et simule diverses intéractions entre les utilisateurs et les produits (achats et échange)
+ * Nom de la classe : testSite
+ * Description      : classe de test, qui crée des utilisateurs, des produits et simule diverses intéractions entre les utilisateurs et les produits (achats et échange)
+ * @version         : 1.0
+ * Date             : 30/01/2021
+ * @Copyright       : Olivier Vigneault
  */
 public class testSite {
     public static void main(String[] args)
     {
-        BandeDessinee bd = new BandeDessinee("Tintin au pays des soviets", "Hergé", "Casterman", 27.95, 144, true);
-        BandeDessinee bd2 = new BandeDessinee("On a marché sur la lune", "Hergé", "Casterman", 27.95, 115, true);
+        BandeDessinee bd = new BandeDessinee("Tintin au pays des soviets", "Hergé", "Casterman", 27.95, 144, "en couleur");
+        BandeDessinee bd2 = new BandeDessinee("On a marché sur la lune", "Hergé", "Casterman", 27.95, 115, "en noir et blanc");
 
         AlbumAColorier album = new AlbumAColorier("Livre de coloriage pour adultes Loups 1", "Nick Snels", "ColoringArtist.com", 11.39, 50);
         AlbumAColorier album2 = new AlbumAColorier("Color Therapy: Énergie", "Collectif", "Marabout", 8.95, 40);
@@ -57,7 +61,7 @@ public class testSite {
         }
         else
         {
-            System.out.println("\nvous ne pouvez pas échanger ces livres puisque ce ne sont pas des bandes dessinées et/ou que le prix des livres n'est pas le même.");
+            System.out.println("\nvous ne pouvez pas échanger ces livres puisque ce ne sont pas des bandes dessinées et/ou que le prix des bandes dessinées n'est pas le même.");
         }
 
         //affichage de l'inventaire de chaque utilisateur après l'échange

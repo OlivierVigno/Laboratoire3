@@ -1,7 +1,12 @@
 /**
- * superclasse englobant l'ensemble des produits vendus sur le site (Film, Livre, BandeDessinée, etc), permettant
- * de modifier et d'obtenir diverses informations sur ces produits
+ * Nom de la classe : Produits
+ * Description      : superclasse englobant l'ensemble des produits vendus sur le site (Film, Livre, BandeDessinée, etc),
+ *                    permettant de modifier et d'obtenir diverses informations sur ces produits
+ * @version         : 1.0
+ * Date             : 30/01/2021
+ * @Copyright       : Olivier Vigneault
  */
+
 public class Produits {
     private String titre;
     private String auteur;
