@@ -3,7 +3,7 @@
  * Description      : gère un compte de banque avec une certaine balance qu'il est possible de modifier
  * @version         : 1.0
  * Date             : 30/01/2021
- * @Copyright       : Olivier Vigneault
+ * @author          : Olivier Vigneault
  */
 
 public class BankAccount {

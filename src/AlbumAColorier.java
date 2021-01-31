@@ -4,7 +4,7 @@
  *                    différence réelle avec la classe Livre
  * @version         : 1.0
  * Date             : 30/01/2021
- * @Copyright       : Olivier Vigneault
+ * @author       : Olivier Vigneault
  */
 
 public class AlbumAColorier extends Livre {

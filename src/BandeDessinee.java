@@ -4,7 +4,7 @@
  *                    (en couleur ou en noir et blanc)
  * @version         : 1.0
  * Date             : 30/01/2021
- * @Copyright       : Olivier Vigneault
+ * @author          : Olivier Vigneault
  */
 
 public class BandeDessinee extends Livre

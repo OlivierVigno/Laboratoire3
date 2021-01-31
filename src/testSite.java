@@ -3,7 +3,7 @@
  * Description      : classe de test, qui crée des utilisateurs, des produits et simule diverses intéractions entre les utilisateurs et les produits (achats et échange)
  * @version         : 1.0
  * Date             : 30/01/2021
- * @Copyright       : Olivier Vigneault
+ * @author          : Olivier Vigneault
  */
 public class testSite {
     public static void main(String[] args)

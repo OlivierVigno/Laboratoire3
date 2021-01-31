@@ -3,7 +3,7 @@
  * Description      : utilisateur qui peut acheter, vendre et échanger des produits avec son compte en banque
  * @version         : 1.0
  * Date             : 30/01/2021
- * @Copyright       : Olivier Vigneault
+ * @author          : Olivier Vigneault
  */
 
 import java.util. ArrayList;

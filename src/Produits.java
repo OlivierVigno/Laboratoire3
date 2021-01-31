@@ -4,7 +4,7 @@
  *                    permettant de modifier et d'obtenir diverses informations sur ces produits
  * @version         : 1.0
  * Date             : 30/01/2021
- * @Copyright       : Olivier Vigneault
+ * @author          : Olivier Vigneault
  */
 
 public class Produits {
