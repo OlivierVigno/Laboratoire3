@@ -7,7 +7,7 @@
  * @author          : Olivier Vigneault
  */
 
-public class Produits {
+public class Produit {
     private String titre;
     private String auteur;
     private double prix;
@@ -18,7 +18,7 @@ public class Produits {
      * @param auteurProduit auteur du produit
      * @param prixProduit prix du produit
      */
-    Produits(String titreProduit, String auteurProduit, double prixProduit)
+    Produit(String titreProduit, String auteurProduit, double prixProduit)
     {
         titre = titreProduit;
         auteur = auteurProduit;

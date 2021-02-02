@@ -6,7 +6,7 @@
  * @author          : Olivier Vigneault
  */
 
-public class Film extends Produits {
+public class Film extends Produit {
     private int duree;
 
     /**

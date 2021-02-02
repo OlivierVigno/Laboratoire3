@@ -8,25 +8,25 @@
 
 import java.util. ArrayList;
 
-public class user {
-    private ArrayList<Produits> produits;
+public class User {
+    private ArrayList<Produit> produits;
     private BankAccount compte;
 
     /**
     construit un utilisateur avec une liste de produit vide.
     @param funds balance de l'utilisateur sur le site
      */
-    user(double funds)
+    User(double funds)
     {
         compte = new BankAccount(funds);
-        produits = new ArrayList<Produits>();
+        produits = new ArrayList<Produit>();
     }
 
     /**
      * ajoute le produit de la liste de produit possédé par l'utilisateur
      * @param produitAchat produit qui a été acheté par l'utilisateur
      */
-    public void buyProduit(Produits produitAchat)
+    public void buyProduit(Produit produitAchat)
     {
         compte.withdraw(produitAchat.getPrix());
         produits.add(produitAchat);
@@ -36,7 +36,7 @@ public class user {
      * retire le produit de la liste des produits possédés par l'utilisateur
      * @param produitVente produit qui a été vendu par l'utilisateur
      */
-    public void sellProduit(Produits produitVente)
+    public void sellProduit(Produit produitVente)
     {
         compte.deposit(produitVente.getPrix());
         produits.remove(produitVente);
@@ -65,7 +65,7 @@ public class user {
      * @param position position du produit recherché
      * @return l'objet Produits correspondant au produit recherché
      */
-    public Produits getProduit(int position)
+    public Produit getProduit(int position)
     {
 
         return produits.get(position);
@@ -76,14 +76,13 @@ public class user {
      */
     public void printProduitsInfo()
     {
-        for (Produits produit : produits) {
+        for (Produit produit : produits) {
             produit.printInfo();
             if (produit instanceof Livre) {
                 Livre livre = (Livre) produit;
                 livre.printLivreInfo();
                 if (produit instanceof BandeDessinee) {
                     BandeDessinee BD = (BandeDessinee) produit;
-                    BD.printBDinfo();
                 }
             } else if (produit instanceof Film) {
                 Film film = (Film) produit;

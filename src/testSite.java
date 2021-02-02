@@ -8,8 +8,8 @@
 public class testSite {
     public static void main(String[] args)
     {
-        BandeDessinee bd = new BandeDessinee("Tintin au pays des soviets", "Hergé", "Casterman", 27.95, 144, "en couleur");
-        BandeDessinee bd2 = new BandeDessinee("On a marché sur la lune", "Hergé", "Casterman", 27.95, 115, "en noir et blanc");
+        BandeDessinee bd = new BandeDessinee("Tintin au pays des soviets", "Hergé", "Casterman", 27.95, 144);
+        BandeDessinee bd2 = new BandeDessinee("On a marché sur la lune", "Hergé", "Casterman", 27.95, 115);
 
         AlbumAColorier album = new AlbumAColorier("Livre de coloriage pour adultes Loups 1", "Nick Snels", "ColoringArtist.com", 11.39, 50);
         AlbumAColorier album2 = new AlbumAColorier("Color Therapy: Énergie", "Collectif", "Marabout", 8.95, 40);
@@ -17,8 +17,8 @@ public class testSite {
         Film film = new Film("Forrest Gump", "Robert Zemeckis", 142, 8.99);
         Film film1 = new Film("The Matrix", "Les Wachowski", 130, 14.99);
 
-        user user1 = new user(100);
-        user user2 = new user(75);
+        User user1 = new User(100);
+        User user2 = new User(75);
 
         System.out.println("Balance initial utilisateur 1 : " + user1.getBalance() + " $");
         System.out.println("Balance initial utilisateur 2 : " + user2.getBalance() + " $\n");

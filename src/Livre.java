@@ -7,7 +7,7 @@
  * @author          : Olivier Vigneault
  */
 
-public class Livre extends Produits {
+public class Livre extends Produit {
     private String editeur;
     private int nombrePages;
 
